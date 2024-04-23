@@ -1,20 +1,22 @@
 #include <iostream>
-#include "ferrari.h"
+#include "mercedes.h"
+#include "amg.h"
+#include "maybach.h"
 
-typedef unsigned int uint;
+typedef unsigned int ui;
+typedef int i;
 
 int main()
 {
 
-    // uint i = 30;
-    // println("i = {}", i);
+    AMG amg(2023, 300, "Black", "V8", "Petrol", 4, "4x4", 18, 1000000);
+    Maybach maybach(2023, 300, "Black", "V8", "Petrol", 4, "4x4");
 
-    Ferrari ferrari("Ferrari", "F8 Tributo", "Red", "Gasoline", "Sport", 2020, 300000);
+    amg.get_price();
 
-    ferrari.getData();
-    ferrari.convertToPln();
-    ferrari.setColor("Blue");
-    ferrari.getColor();
+    // amg.size_of_wheels;
+    // amg++;
+    // amg.get_size_of_wheels();
 
     return 0;
 }

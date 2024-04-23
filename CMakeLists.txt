@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
-project(Test)
+project(OOP)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -14,5 +14,5 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(fmt)
 
-add_executable(Test main.cpp car.cpp car.h ferrari.cpp ferrari.h)
-target_link_libraries(Test PRIVATE fmt::fmt)
+add_executable(OOP main.cpp machine.h machine.cpp mercedes.h mercedes.cpp amg.h amg.cpp maybach.h maybach.cpp)
+target_link_libraries(OOP PRIVATE fmt::fmt)
